@@ -214,11 +214,11 @@ void board::newNumber()
 		x = rand() % 4;
 		y = rand() % 4;
 	} while (BOARD[x][y] != 0);
-
+	
 	while (1)
 	{
-		newNumber = (rand() % 3) / 2;
-		if (newNumber != 0)
+		newNumber = (rand() % 5) / 2;
+		if (newNumber != 0 && newNumber!=1)
 		{
 			BOARD[x][y] = newNumber;
 			break;
